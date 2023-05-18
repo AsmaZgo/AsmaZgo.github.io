@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: AsmaZgo Data Science Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Asma Zgolli
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,9 +22,9 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Meduim: "https://medium.com/@zgolliasma"
+    - LinkedIn: "https://www.linkedin.com/in/asma-zgolli-225642a5/"
+  Author's home: "https://github.com/AsmaZgo"
 
 ################
 # --- Logo --- #
