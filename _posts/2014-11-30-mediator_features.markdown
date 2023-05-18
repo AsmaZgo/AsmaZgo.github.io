@@ -1,56 +1,91 @@
 ---
 layout: post
-title:  "Mediator Features"
-date:   2014-11-30 14:34:25
+title:  "Comparing Databases"
+date:   2023-05-18 23:34:25
 categories: mediator feature
 tags: featured
 image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
 image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
 ---
-# **System Design Exercice**
+# Comparing Databases
 
-## Problem definition:
-For an anomaly detection use case, we wish to design a platform (i) for near real-time data ingestion from a data stream and (ii) for model training (online and batch) to solve the problem. The online (re)training should be executed at the rate of data arrival, and the batch (re)training should be triggered at the end of the day, integrating new data into the existing model. 
+Databases types can be classified into two types:
+-	Relational databases 
+-	NOSQL databases 
 
-## Model selection for the anomaly detection problem:
-The model that should be used for this problem is a decision tree called isolation trees. Outlier data is easier to detect in the tree. Additionally, an anomaly score can be used to detect data points that are located far away from the other data points.
-
-## Architecture design for the model training (online and batch)
-High-level project setup:
-
-- Streaming engine that supports near real-time events like Apache Spark Streaming.
-- Distributed machine learning techniques to be able to handle all the incoming batch data at the end of the day, like Spark ML or deep learning. The incoming data frequency is 10 MB per second, which will create a voluminous amount of data to process by the end of the day.
-- Spark Dataframe API can be used to access the batch training data at the end of each day.
-- Jupyter Notebook and Python can be used for development.
-
-The final project should be composed of the following components:
-
-- Stream data access layer
-- Batch data access layer
-- Model training and evaluation layer
-- Feature selection and engineering layer
-- Model adapting layer
+There are also other special databases such as: object oriented databases and time series databases. 
+NOSQL databases are generally categorised into four types:
+- key value databases
+- document databases 
+- graph oriented databases
+- column oriented databases
 
 
-![image](https://user-images.githubusercontent.com/10657080/232062716-1ba60d68-9988-4fe0-824c-241ac19e5dd2.png)
+Each database categorie has its own advantages and disadvantages. 
+
+Relational databases are generally used in applications where the data is complex, but the size is relatively small or medium. When we say the data is complex, we mean that there are many relationships (which are called associations in the entity-association model) between different entities, and join queries are frequently used to access the data.
+
+The data used in these databases is structured, and the values are atomic. Additionally, these databases support ACID transactions.
+
+Advantages :
+-	The relational data model uses the relational algebra to access data which facilitate querying complex data. For example SQL is a very rich query language that supports most operations needed for data analysis, especially joins and aggregations..
+-	ACID Transaction support
+-	Data validation using constrains such as uniqueness, primary and foreign keys
 
 
-According to the architecture, the online training method that we chose is model retraining. In order to update the model, we need to update the hyperparameters. For example, we should use lower values for learning rates to avoid retraining the model and instead only update the existing model with the new data. In this case, the new and old data should be combined to create a train and test set.
+Disadvantages :
+-	Does not scale much. It’s not suitable for internet scale data. (Some solutions like Teradata exist for solving the volume problem but it’s not enough)
+-	Steep learning curve for SQL
 
-One approach to integrating online learning and offline model updates is to continuously update the model with each new data arrival. In this case, the learning rate should be updated at every new type of retrain, and this hyperparameter should be studied at the proof of concept (POC) step accordingly. Another approach would be to store all updates in one data store and retrain the model only once a day.
+NOSQL databases are ,in the other hand, used with unstructured, semi structured data. It can store huge volumes of data ranging from terabytes to petabytes and beyond. But they support a more relaxed transaction model called BASE 
+Key value databases store data stored and access it as a key-value pair: a Key is a unique identifier and a value stores complex data (like text) or binary data.  An example of a key-value database is DynamoDB.
 
-In order to offer near-real-time visualizations (live dashboards) for model monitoring and prediction, we propose using a streaming engine such as Apache Spark Streaming or Apache Flink to collect the streams. Spark streams produce micro-batches, and Spark Streaming offers this functionality with a streaming delay of just 1 second.
-
-For the dashboard, we propose using Jupyter Notebook and designing it with libraries such as Seaborn or using the Dash library in Python.
-
-The implementation needed for the given scenarios is as follows:
-
-- Summary statistics of the data stream: Use aggregation methods in the streaming engine.
-- Anomaly scores: Extract anomaly scores by interrogating the stored model.
-- Other metrics and KPIs can be computed on the fly while learning anomalies and streaming data, and collected in an insight database (key-value store to ensure very fast data access).
-
-The final architecture becomes when we add the dashboard :
+Advantages :
+-	Efficient index on data: very fast data access (access on key for highly distributed data)
+-	Simple data model
 
 
-![image](https://user-images.githubusercontent.com/10657080/232062601-d0cb5b42-f8b1-4417-a40d-87896fa47deb.png)
+Disadvantages :
+-	Limited access API (generally only support get, set and sometimes filter. The API support for operators depend on the vendor). This limited access is not suitable for most use cases 
 
+Document-oriented databases store aggregated data, such as JSON, as documents. An example of such a database is MongoDB.
+Advantages :
+-	Enables complex queries like aggregations
+-	Supports Rich filters
+
+
+Disadvantages: 
+-	Slow writes and lack of consistency 
+-	Doesn’t support join operator
+
+The spelling and grammar in the given text are correct. However, there are a few changes that can be made to improve the clarity and readability of the text:
+
+In column-oriented database, data is organized as columns, where each column stores aggregates and is grouped into column families. An example of a column-oriented database is Cassandra.
+
+Advantages:
+-	Evolving data schema
+-	Efficient column oriented storage
+
+
+Disadvantages :
+-	Slow writes 
+-	bad performance with small data and row based access 
+-	doesn’t support generally join and aggregate (in some solutions the only way to aggregate data is to use mapreduce)
+
+Graph oriented databases Store the data as a graph and represents the connexions between data records.
+
+Advantages : 
+-	Graph algorithms for efficient connected data querying
+
+
+Disadvantages :
+-	Doesn’t support well distribution
+
+
+The choice of database in a particular system architecture generally depends on the use case. Some classic use cases include :
+
+- Relational databases : financial data like in banks
+- Key-value datastores : store data collected in real time for future processing like smart meters data collected from the smart grid
+- Document datastore : store blog data which is generally structured as a document. Clients profile data
+- Column oriented datastore : store data where use cases are to aggregate a limited number of columns such as data warehouse who aggregate certain number of column values
+- Graph datastores are suitable for social networks who have lots of connected data and are applied in industry for Fraud detection. 
