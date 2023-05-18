@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Anomaly detection: ML System Design"
-date:   2014-08-29 14:34:25
+date:   2023-05-18 19:34:25
 categories: jekyll update
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
