@@ -31,7 +31,7 @@ The final project should be composed of the following components:
 - Model adapting layer
 
 
-![image](https://user-images.githubusercontent.com/10657080/232062716-1ba60d68-9988-4fe0-824c-241ac19e5dd2.png)
+![Figure 1- System architecture design](https://user-images.githubusercontent.com/10657080/232062716-1ba60d68-9988-4fe0-824c-241ac19e5dd2.png)
 
 
 According to the architecture, the online training method that we chose is model retraining. In order to update the model, we need to update the hyperparameters. For example, we should use lower values for learning rates to avoid retraining the model and instead only update the existing model with the new data. In this case, the new and old data should be combined to create a train and test set.
@@ -51,7 +51,7 @@ The implementation needed for the given scenarios is as follows:
 The final architecture becomes when we add the dashboard :
 
 
-![image](https://user-images.githubusercontent.com/10657080/232062601-d0cb5b42-f8b1-4417-a40d-87896fa47deb.png)
+![Figure 2- System architecture design updated](https://user-images.githubusercontent.com/10657080/232062601-d0cb5b42-f8b1-4417-a40d-87896fa47deb.png)
 
 
 
