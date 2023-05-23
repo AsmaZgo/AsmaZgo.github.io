@@ -54,10 +54,13 @@ The final architecture becomes when we add the dashboard :
 ![image](https://user-images.githubusercontent.com/10657080/232062601-d0cb5b42-f8b1-4417-a40d-87896fa47deb.png)
 
 
+
+
 {% highlight js %}
 
 <footer class="site-footer">
- <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
+ <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> 
+  <i class="fa fa-rss"></i> Subscribe!</span></a>
   <div class="inner">a
    <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
    <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a></section>
