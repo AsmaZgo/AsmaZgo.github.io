@@ -16,8 +16,9 @@ In this article, we are going to present a general overview of TigerGraph. We wi
 System Architecture
 TigerGraph is a distributed, graph-oriented datastore with a massively parallel processing query engine. It differs from other similar datastores on the market due to its horizontally scalable architecture, which allows it to support the execution of workloads on big graphs of up to hundreds of billions of entities and 1 trillion relationships [1]. It supports native parallel query execution, enabling faster deep exploration of the data stored in TigerGraph. Its query language, GSQL, is a declarative, SQL-like query language with a lower learning curve for new developers in the field. It is also Turing complete, meaning that any query can be expressed using GSQL, unlike other similar query languages. In the following figure (figure 1), we present two types of GSQL queries.
 
+![Figure 1- Examples of GSQL queries](/assets/image.jpg)
 
-Figure 1- Examples of GSQL queries
+
 The first query (Q1) is a simple filtering operation performed on all the graph vertices. The second query (Q2), however, lists some information about the edges of a set of paths filtered by a particular condition. The scanning of the paths in query Q2 is expressed using the graph pattern:
 
 source-vertex-name-(edge-name)->target-vertex-name.
