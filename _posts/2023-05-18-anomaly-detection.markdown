@@ -54,7 +54,6 @@ The final architecture becomes when we add the dashboard :
 
 ![Figure 2- System architecture design updated](https://user-images.githubusercontent.com/10657080/232062601-d0cb5b42-f8b1-4417-a40d-87896fa47deb.png)
 
-{% include disqus.html %}
 
 
 
