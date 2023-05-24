@@ -89,3 +89,8 @@ The choice of database in a particular system architecture generally depends on 
 - Document datastore : store blog data which is generally structured as a document. Clients profile data
 - Column oriented datastore : store data where use cases are to aggregate a limited number of columns such as data warehouse who aggregate certain number of column values
 - Graph datastores are suitable for social networks who have lots of connected data and are applied in industry for Fraud detection. 
+
+
+
+
+{% include disqus.html %}
