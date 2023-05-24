@@ -56,4 +56,7 @@ The final architecture becomes when we add the dashboard :
 
 
 
+{% include disqus.html %}
+
+
 
