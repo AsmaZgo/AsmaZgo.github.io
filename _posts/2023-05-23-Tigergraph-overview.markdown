@@ -71,3 +71,6 @@ Where Ai and Bi are the attributes of two points A and B. In TigerGraph, it is p
 
 ## Conclusion
 In this article, we presented a brief overview of TigerGraph and a summary of its graph algorithms for machine learning. For a deeper understanding of this tool, it is possible to explore multiple resources such as webinars and blogs about real-world use cases on their official website [6]. This blog post is the first of a two-blog series about Graph Analytics, and in the next one, we will showcase a practical example of using graph data science algorithms to solve problems.
+
+
+{% include disqus.html %}
