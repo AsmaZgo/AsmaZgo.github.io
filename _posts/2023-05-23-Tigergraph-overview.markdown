@@ -9,7 +9,9 @@ image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.J
 ---
 # TigerGraph Overview
 
-A comprehensive overview of TigerGraph, highlighting its scalable system architecture and describing its unique data science capabilities. This blog post was also published on meduim at the following link: https://medium.com/dataness-ai/tigergraph-overview-50c949272a5d.
+A comprehensive overview of TigerGraph, highlighting its scalable system architecture and describing its unique data science capabilities. 
+
+Read it on meduim! : <a href="https://medium.com/dataness-ai/tigergraph-overview-50c949272a5d"> Link on meduim </a>
 
 In this article, we are going to present a general overview of TigerGraph. We will describe its architecture to showcase its capabilities and the problems it is designed to solve. We will also present its data model to understand better how the data is stored and organized within the system. Finally, we will present an example of using TigerGraph in the industry, highlighting its machine-learning support.
 
