@@ -2,8 +2,7 @@
 layout: post
 title:  "Welcome to my blog!"
 date:   2022-08-29 14:34:25
-categories: jekyll update
-tags: featured
+categories: blog update
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 
 image2: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop_mobile.jpeg
