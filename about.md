@@ -12,8 +12,8 @@ My critical thinking skills and ability to work effectively in a team have allow
 
 Industry knowledge: E-commerce, Fashion, Energy, Telecom, Automobile
 
-**Github:** <a href="https://github.com/AsmaZgo">AsmaZgo</a>
+**Github:** <a href="https://github.com/AsmaZgo">https://github.com/AsmaZgo</a>
 
-**Meduim:** <a href="https://medium.com/@zgolliasma">zgolliasma</a>
+**Meduim:** <a href="https://medium.com/@zgolliasma">https://medium.com/@zgolliasma</a>
 
-**Twitter:** <a href="https://twitter.com/zgolli_asma">zgolli_asma</a>
+**Twitter:** <a href="https://twitter.com/zgolli_asma">https://twitter.com/zgolli_asma</a>
