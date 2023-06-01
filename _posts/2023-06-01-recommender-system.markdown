@@ -17,7 +17,7 @@ This ML system design problem is composed of two big building blocks:
 
 -Online component for generating (inferring) recommendations
 
-[Figure 1- System architecture design](/assets/article_images/rec_sys_simple_design/Untitled Diagram-Copie de Page-4.drawio.png)
+[Figure 1- System architecture design](/assets/article_images/rec_sys_simple_design/sysdiag.png)
 
 
 {% include disqus.html %}
