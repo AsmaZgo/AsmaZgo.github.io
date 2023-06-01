@@ -26,7 +26,7 @@ large datasets. I'm also passionate about using data science and analytics to so
 
 •	https://medium.com/@zgolliasma/what-is-the-future-of-ai-adoption-4d74c35ab957
 
-•	will be released soon: NLP blogs about transformers
+•	NLP blog about transformers : https://d3mlabs.de/?p=1169
 
 ### Conference papers (Selection)
 - DWS: a data placement approach for Smart Grid EcosystemsDWS: a data placement approach for Smart Grid Ecosystems
