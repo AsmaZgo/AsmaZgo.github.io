@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Recommender system: ML System Design"
+title:  "Recommender System: ML System Design"
 date:   2023-06-01 14:34:25
 categories: machine-learning feature
 tags: featured

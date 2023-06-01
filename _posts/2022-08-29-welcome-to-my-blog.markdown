@@ -21,12 +21,12 @@ large datasets. I'm also passionate about using data science and analytics to so
 
 •	Certifications and certificates: https://github.com/AsmaZgo/my_certifications
 
-### Blogs
-•	https://medium.com/@zgolliasma/tigergraph-overview-50c949272a5d
+### External Blogs
+•	<a href="https://medium.com/@zgolliasma/tigergraph-overview-50c949272a5d">Tigergraph Overview on meduim</a>
 
-•	https://medium.com/@zgolliasma/what-is-the-future-of-ai-adoption-4d74c35ab957
+•	<a href="https://medium.com/@zgolliasma/what-is-the-future-of-ai-adoption-4d74c35ab957">What's the future of AI on meduim</a>
 
-•	NLP blog about transformers : https://d3mlabs.de/?p=1169
+•	<a href="https://d3mlabs.de/?p=1169">NLP blog about transformers</a>
 
 ### Conference papers (Selection)
 - DWS: a data placement approach for Smart Grid EcosystemsDWS: a data placement approach for Smart Grid Ecosystems
