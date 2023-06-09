@@ -21,7 +21,8 @@ This problem of ML system design consists of two major building blocks:
 
 The initial offline training process follows the classic Data Science lifecycle, beginning with data collection and transformation into features, and concluding with model building and validation. The outcome of these steps is a dataset that captures the features and is stored in a feature store, along with a model that is persisted in a blob storage medium, such as a distributed file system like S3.
 
-In this article, we specifically focus on the online component.
+This article focuses specifically on the online component. In this subsystem, a user submits a request through a REST API, for instance. The request is then forwarded to an application server that encompasses the recommender functions. In our architecture, we propose utilizing a load balancer to provide increased scalability, performance, reliability, and redundancy to the service layer []. Scaling this layer horizontally enables us to handle requests from billions of users and deliver improved response times by minimizing throughput.
+
 
 {% include disqus.html %}
 {% raw %}{% seo %}{% endraw %}
