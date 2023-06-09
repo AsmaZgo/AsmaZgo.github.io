@@ -23,6 +23,7 @@ The initial offline training process follows the classic Data Science lifecycle,
 
 This article focuses specifically on the online component. In this subsystem, a user submits a request through a REST API, for instance. The request is then forwarded to an application server that encompasses the recommender functions. In our architecture, we propose utilizing a load balancer to provide increased scalability, performance, reliability, and redundancy to the service layer []. Scaling this layer horizontally enables us to handle requests from billions of users and deliver improved response times by minimizing throughput.
 
+As depicted in the architecture, the recommender module consists of two components: (i) a content filtering algorithm that identifies relevant videos for each user based on their profile and historical viewing data, and (ii) a ranking algorithm that assigns scores to the recommended videos.
 
 {% include disqus.html %}
 {% raw %}{% seo %}{% endraw %}
