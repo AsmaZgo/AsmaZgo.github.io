@@ -24,6 +24,7 @@ The initial offline training process follows the classic Data Science lifecycle,
 In this article, we specifically focus on the online component.
 
 {% include disqus.html %}
+{% raw %}{% seo %}{% endraw %}
 
 
 
