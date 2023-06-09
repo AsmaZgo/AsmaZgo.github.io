@@ -25,6 +25,8 @@ This article focuses specifically on the online component. In this subsystem, a 
 
 As depicted in the architecture, the recommender module consists of two components: (i) a content filtering algorithm that identifies relevant videos for each user based on their profile and historical viewing data, and (ii) a ranking algorithm that assigns scores to the recommended videos.
 
+The techniques employed in content filtering can range from basic approaches, such as simple similarity matching, to more advanced methods involving deep neural network models. In this particular example, we focus on utilizing a model for the content filtering algorithm.
+
 {% include disqus.html %}
 {% raw %}{% seo %}{% endraw %}
 
