@@ -28,7 +28,7 @@ As depicted in the architecture, the recommender module consists of two componen
 The techniques employed in content filtering can range from basic approaches, such as simple similarity matching, to more advanced methods involving deep neural network models. In this particular example, we focus on utilizing a model for the content filtering algorithm.
 
 {% include disqus.html %}
-{% raw %}{% seo %}{% endraw %}
+
 
 
 
