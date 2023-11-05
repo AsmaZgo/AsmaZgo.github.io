@@ -58,8 +58,6 @@ Disadvantages:
 -	Slow writes and lack of consistency 
 -	Doesn’t support join operator
 
-The spelling and grammar in the given text are correct. However, there are a few changes that can be made to improve the clarity and readability of the text:
-
 In column-oriented database, data is organized as columns, where each column stores aggregates and is grouped into column families. An example of a column-oriented database is Cassandra.
 
 Advantages:
